@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color: #fff;
+    --text-color:#555;
+    --title-color:#000;
+}
+:body{
+    background-color: var(--background-color);
+    color: var(--text-color)
+}
+
+.header{
+    width: 100%;
+    min-width: 100vh;
+    padding: 0 8%;
+    position: relative;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+nav ul{
+    width: 50px;
+    display: flex;
+    list-style: none;
+    text-align: right;
+    margin-right: 50px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 5px 15px;
+
+
+}
