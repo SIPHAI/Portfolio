@@ -1,24 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Siphai's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>portfolio</title>
 </head>
 <body>
-    <div class="header">
-        <nav>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Achievment</a></li>
-                <li><a href="#">Hobbies</a></li>
-                <li><a href="#">Handmade</a></li>
-                
-            </ul>
-        </nav>
-    </div>
+  <div class="header">
+    <nav>
+      <a href="#" class="logo"><img src="" alt=""></a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Achievment</a></li>
+        <li><a href="#">Hobbies</a></li>
+      </ul>
+
+<!-- #xcvbnm,./nm,. -->
+      <div class="toggle-btn" id="btn">
+        <span>Dark</span>
+        <img src="images/moon.png" alt="">
+      </div>
+    </nav>
+     <div class="content">
+        <div class="title">
+          <h1>Hello!</h1>
+          <h1><span>I'm</span> Siphai PHOL</h1>
+          <p>I'm a developer and designer with a passion for website design. I always try my best to provide the best experience.</p>
+        </div>
+          <a href="#">Hire Me</a>
+     </div>
+
+     <div class="image-box">
+        <img src="images/profile.png" alt="">
+        <div class="pattern">
+          <img src="images/background.png" alt="">
+          <img src="images/background.png" alt="">
+        </div>
+     </div>   
+
+
+
+  </div>
+
+
+  <script>
+
+    let btn = document.getElementById('btn');
+
+    btn.addEventListener('click', function(){
+      document.body.classList.toggle('dark');
+      if(document.body.classList.contains('dark')){
+        btn.innerHTML = '<img src="images/sun.png" alt="">';
+        btn.style.color = '#fff';
+      }else{
+        btn.innerHTML = '<img src="images/moon.png" alt="">';
+        btn.style.color = '#000';
+      }
+    });
+
     
-    
+  </script>
+
 </body>
 </html>
