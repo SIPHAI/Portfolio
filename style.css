@@ -152,4 +152,14 @@
     }
   }
   
+  .about{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 8%;
+    position: relative;
+  }
+  .about-content{
+    width: 100vh;
+    background-color: #4864ff;
+  }
   
