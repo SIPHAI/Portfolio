@@ -157,14 +157,16 @@
 
   section{
     width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;   
     justify-content: center; 
   }
   .about{
     width: 80%;
     height: 60vh;
+    border-radius: 15px;
     align-content: center;
+    justify-content: center;
     background-color: aliceblue;
   }
   .about img{
@@ -172,5 +174,23 @@
     height: auto;
     border-radius: 50px 50px 20px 0px;
   }
- 
-  
+ .about ul{
+  display: flex;
+  align-items: center;
+ }
+ .about ul li{
+  width: 25px;
+  height: 25px; 
+  border-radius: 50%;
+  list-style: none;
+  margin: 5px;
+ }
+ .about ul .delete{
+  background-color: #ff4b4b;
+ }
+ .about ul .minus{
+  background-color: #f1f81d;
+ }
+ .about ul .full{
+  background-color: #05e951;
+ }
